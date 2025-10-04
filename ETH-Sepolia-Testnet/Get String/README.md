@@ -1,6 +1,5 @@
 # Get > String
-This smart contract demonstrates how to retrieve a single string value from our oracle.  
-It uses a public JSON API that is compatible with standard `curl GET` requests.
+This smart contract demonstrates how to retrieve a single string value from our oracle. It uses a public JSON API that is compatible with standard `curl GET` requests.
 
 ## Standard Use Cases:
 - Returns a single `string` value from the oracle.
@@ -37,15 +36,15 @@ Replace this with the API endpoint you want the contract to query.
   ```solidity
   req.add("path", ""data,results");
   ``` 
-Provide the comma‑separated JSON path that points to the value you want returned to the smart contract.
-Example: "data,results" retrieves the results field inside the data object
+  Provide the comma‑separated JSON path that points to the value you want returned to the smart contract.
+  Example: "data,results" retrieves the results field inside the data object
 
-Note
-If the JSON response contains arrays, include the index in the path.
-For example:
-  ```solidity
-  req.add("path", ""0,data,results");
-  ```
+  Note
+  If the JSON response contains arrays, include the index in the path.
+  For example:
+    ```solidity
+    req.add("path", ""0,data,results");
+    ```
 
 
 

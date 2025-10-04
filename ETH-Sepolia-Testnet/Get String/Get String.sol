@@ -40,7 +40,7 @@ contract getStringTemplate is ChainlinkClient {
   {
     Chainlink.Request memory req = buildChainlinkRequest(externalJobId, address(this), this.fulfillString.selector);
     req.add("get", "https://your_API_endpoint_url");
-    req.add("path1", "data,results");
+    req.add("path", "data,results");
     sendOperatorRequest(req, oraclePayment);
   }
 

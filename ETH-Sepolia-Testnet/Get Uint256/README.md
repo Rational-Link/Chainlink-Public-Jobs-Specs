@@ -36,11 +36,11 @@ Before compiling and deploying the smart contract in Remix, make sure to update 
   ```
   Provide the comma-separated JSON path that points to the numeric value you want returned to the smart contract.
 
-If the JSON response contains arrays, include the index in the path.
-For example:
-  ```solidity
-  req.add("path", ""0,data,results");
-  ```
+  If the JSON response contains arrays, include the index in the path.
+  For example:
+    ```solidity
+    req.add("path", ""0,data,results");
+    ```
 
 - **Line 46**
   ```solidity
