@@ -1,5 +1,5 @@
 # Get > Uint256
-This smart contract is designed to retrieve a single Uint256 value from our oracle using a public JSON API that is compatible with `curl GET` requests.
+This smart contract is designed to retrieve a single Uint256 value from an oracle using a public JSON API that is compatible with `curl GET` requests.
 
 ## Standard Use Cases:
 - Returns a single unsighed value from the oracle (i.e., a number that can only be zero or positive).
@@ -48,11 +48,9 @@ For example:
   ```
   - multiplication factor must be used to multiply all the decimal places present within the API JSON response:
 
-Note: To preserve the full precision of the number 123.456, apply a multiplication factor of 1000, resulting in 123456.
+**Note:** To retain the full precision of a decimal value such as `123.456`, apply a multiplication factor — for example, `1000` — which converts the number to `123456` before storing or transmitting it.
 
-
-
-Note: After the fulfillRequest function is executed, you should divide the result by the previously used multiplication factor to obtain the appropriate number of decimal places for downstream usage.
+**Note:** After the `fulfillRequest` function executes, divide the returned value by the same multiplication factor to restore the original decimal format for downstream use.
 
 ## Curl Command
 Curl command : 
@@ -71,17 +69,18 @@ JSON API Output:
 
 1. Open [Remix IDE](https://remix.ethereum.org/).  
 2. Log in to MetaMask and confirm you are connected to the **Ethereum Sepolia Test Network**.  
-3. Copy and paste the full contents of `Get > String.sol` from this repository into Remix.  
-4. Update the input parameters on **lines 36–37** to match your specific use case.  
+3. Copy and paste the full contents of `Get Uint256.sol` from this repository into Remix.  
+4. Update the input parameters on to match your specific use case.  
 5. Compile and deploy the smart contract.  
 6. Fund your newly deployed contract with the minimum amount of **ERC677 LINK** required for the number of requests you plan to make.  
 7. In the contract’s Read/Write panel, click the **`requestAddress`** button.  
 8. Approve the gas fee in MetaMask to send the request to the oracle.  
-9. Wait approximately **1–2 minutes (1–2 blocks)** for the oracle to return the requested data.  
+9. Wait for the oracle to return the requested data.  
 10. Once complete, click the **`AddressVariable`** button to view the returned value.  
 
 ## Contact :email:
-If you can't find an answer to your question, welcome to reach out to [email](chris@rational-link.com) or to check out our [website](https://www.rational-link.com).
+If you can't find an answer to your question, welcome to reach out to chris@rational-link.com or to check out our [website](https://www.rational-link.com).
+
 
 
 

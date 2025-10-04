@@ -35,7 +35,7 @@ Replace this with the API endpoint you want the contract to query.
 
 - **Line 43**  
   ```solidity
-  req.add("path1", ""data,results");
+  req.add("path", ""data,results");
   ``` 
 Provide the comma‑separated JSON path that points to the value you want returned to the smart contract.
 Example: "data,results" retrieves the results field inside the data object
@@ -44,7 +44,7 @@ Note
 If the JSON response contains arrays, include the index in the path.
 For example:
   ```solidity
-  req.add("path1", ""0,data,results");
+  req.add("path", ""0,data,results");
   ```
 
 
@@ -53,17 +53,17 @@ For example:
 
 1. Open [Remix IDE](https://remix.ethereum.org/).  
 2. Log in to MetaMask and confirm you are connected to the **Ethereum Sepolia Test Network**.  
-3. Copy and paste the full contents of `Get > String.sol` from this repository into Remix.  
-4. Update the input parameters on **lines 36–37** to match your specific use case.  
+3. Copy and paste the full contents of `Get String.sol` from this repository into Remix.  
+4. Update the input parameters to match your specific use case.  
 5. Compile and deploy the smart contract.  
 6. Fund your newly deployed contract with the minimum amount of **ERC677 LINK** required for the number of requests you plan to make.  
 7. In the contract’s Read/Write panel, click the **`requestAddress`** button.  
 8. Approve the gas fee in MetaMask to send the request to the oracle.  
-9. Wait approximately **1–2 minutes (1–2 blocks)** for the oracle to return the requested data.  
+9. Wait for the oracle to return the requested data.  
 10. Once complete, click the **`AddressVariable`** button to view the returned value.  
 
 ## Contact :email:
-If you can't find an answer to your question, welcome to reach out to [email](chris@rational-link.com) or to check out our [website](https://www.rational-link.com).
+If you can't find an answer to your question, welcome to reach out to chris@rational-link.com or to check out our [website](https://www.rational-link.com).
 
 
 
