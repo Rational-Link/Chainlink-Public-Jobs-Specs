@@ -29,8 +29,8 @@ contract getStringTemplate is ChainlinkClient {
   constructor(
   ) {
     setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
-    setChainlinkOracle(0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1);
-    externalJobId = "3474e8f52eee4c9282363d6d5b8c589c";
+    setChainlinkOracle(0xD738C81c59C5d0C42Fd061c4005c02C202d3fEFD);
+    externalJobId = "d6c22267b8034675afa4d4613fa84bbd";
     oraclePayment = ((0 * LINK_DIVISIBILITY) / 10); // n * 10**18
   }
 
