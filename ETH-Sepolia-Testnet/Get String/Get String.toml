@@ -1,0 +1,34 @@
+type = "directrequest"
+schemaVersion = 1
+
+# evmChainID for Sepolia Testnet
+evmChainID = "11155111"
+
+name = "ETH-SEPOLIA DIRECT REQUEST (Get > String)"
+
+# Optional External Job ID: Automatically generated if unspecified
+# externalJobID = "3474e8f52eee4c9282363d6d5b8c589c"
+
+forwardingAllowed = false
+maxTaskDuration = "0s"
+contractAddress = "0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1"
+minContractPaymentLinkJuels = "0"
+observationSource = """
+    decode_log   [type="ethabidecodelog"
+                  abi="OracleRequest(bytes32 indexed specId, address requester, bytes32 requestId, uint256 payment, address callbackAddr, bytes4 callbackFunctionId, uint256 cancelExpiration, uint256 dataVersion, bytes data)"
+                  data="$(jobRun.logData)"
+                  topics="$(jobRun.logTopics)"]
+
+    decode_cbor  [type="cborparse" data="$(decode_log.data)"]
+    fetch        [type="http" method=GET url="$(decode_cbor.get)"]
+    parse        [type=jsonparse path="$(decode_cbor.path)" data="$(fetch)"]
+    encode_data  [type="ethabiencode" abi="(bytes32 requestId, string string1)" data="{ \\"requestId\\": $(decode_log.requestId), \\"string1\\": $(parse)}"]
+    encode_tx    [type="ethabiencode"
+                      abi="fulfillOracleRequest2(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes calldata data)"
+                      data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
+                 ]
+    submit_tx    [type="ethtx" to="0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1" data="$(encode_tx)"]
+
+    decode_log -> decode_cbor -> fetch -> parse -> encode_data -> encode_tx -> submit_tx
+"""
+
