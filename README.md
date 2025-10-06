@@ -3,7 +3,7 @@
 Welcome to this educational repository.  
 Here you’ll find example smart contracts and oracle job specifications that demonstrate how to connect on-chain applications with trusted off-chain data sources.
 
-Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **enterprise-grade oracle services** with reliability, uptime, and security at the core. The examples provided areto give developers the essential information needed to connect their Web3 apps to the Oracle services.
+Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **enterprise-grade oracle services** with reliability, uptime, and security at the core. The examples provided are to give developers the essential information needed to connect their Web3 apps to the Oracle services.
 
 ---
 
