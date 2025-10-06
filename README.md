@@ -7,7 +7,7 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **en
 
 ---
 
-## 📘 Overview
+## Overview
 - Example Solidity contracts for requesting and consuming external data.
 - Sample TOML job descriptions to illustrate oracle job configuration.
 - References to oracle contract addresses and job IDs for supported test networks.
@@ -15,14 +15,14 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **en
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 - `contracts/` → Solidity examples (educational only).
 - `jobs/` → TOML job description samples.
 - `docs/` → Additional notes and references.
 
 ---
 
-## 🔑 Oracle Details
+## Oracle Details
 - **Supported Networks**: Ethereum, Polygon, Arbitrum (with more to come).  
 - **Oracle Contract IDs & Job IDs**: Provided in examples for testnet usage.  
 - **Fees**: Demonstrated with placeholder values for clarity.  
@@ -31,14 +31,14 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **en
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 - All code and configurations are **for educational purposes only**.  
 - Contracts use **hardcoded values** and **unaudited code**.  
 - Do **not** deploy to production or use with real funds.  
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 1. Clone this repository.  
 2. Open the Solidity contracts in [Remix](https://remix.ethereum.org/) or your preferred IDE.  
 3. Update input parameters (API endpoint, JSON path, etc.) before compiling.  
@@ -46,7 +46,7 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **en
 
 ---
 
-## 📖 Learn More
+## Learn More
 - [Rational-Link Website](https://www.rational-link.com)  
 - [Chainlink Documentation](https://docs.chain.link/)  
 - [Ethereum Remix IDE](https://remix.ethereum.org/)  
