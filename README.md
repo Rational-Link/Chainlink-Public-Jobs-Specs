@@ -9,7 +9,6 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to provide **en
 - Sample TOML job descriptions to illustrate oracle job configuration.
 - References to oracle contract addresses and job IDs for supported test networks.
 
-
 ---
 
 ## Repository Structure
@@ -39,6 +38,7 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to provide **en
 3. Log in to MetaMask and confirm you are connected to the blockchain network.
 4. Update the input parameters on to match your specific use case, before compiling and deploying the smart contract.  
 5. Deploy to the blockchain network and connect with the provided oracle/job IDs. 
+
 ---
 
 ## Learn More
