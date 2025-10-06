@@ -1,9 +1,9 @@
-# Rational-Link Oracle Examples
+# Rational-Link - Oracle Job Specifications and Example
 
-Welcome to the **Rational-Link educational repository**.  
+Welcome to this educational repository.  
 Here you’ll find example smart contracts and oracle job specifications that demonstrate how to connect on-chain applications with trusted off-chain data sources.
 
-Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **enterprise-grade oracle services** with reliability, uptime, and security at the core. These examples are provided to help developers understand the fundamentals of oracle integration.
+Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **enterprise-grade oracle services** with reliability, uptime, and security at the core. The examples provided areto give developers the essential information needed to connect their Web3 apps to the Oracle services.
 
 ---
 
@@ -11,7 +11,7 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **en
 - Example Solidity contracts for requesting and consuming external data.
 - Sample TOML job descriptions to illustrate oracle job configuration.
 - References to oracle contract addresses and job IDs for supported test networks.
-- Designed for **learning and experimentation only** — not production use.
+
 
 ---
 
@@ -32,18 +32,16 @@ Our mission at [Rational-Link](https://www.rational-link.com) is to deliver **en
 ---
 
 ## Disclaimer
-- All code and configurations are **for educational purposes only**.  
-- Contracts use **hardcoded values** and **unaudited code**.  
-- Do **not** deploy to production or use with real funds.  
+- This code and configuration are educational examples. Please review and modify before using in production.
 
 ---
 
 ## Getting Started
 1. Clone this repository.  
 2. Open the Solidity contracts in [Remix](https://remix.ethereum.org/) or your preferred IDE.  
-3. Update input parameters (API endpoint, JSON path, etc.) before compiling.  
-4. Deploy to a testnet and connect with the provided oracle/job IDs.  
-
+3. Log in to MetaMask and confirm you are connected to the blockchain network.
+4. Update the input parameters on to match your specific use case, before compiling and deploying the smart contract.  
+5. Deploy to the blockchain network and connect with the provided oracle/job IDs. 
 ---
 
 ## Learn More
