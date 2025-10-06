@@ -31,8 +31,8 @@ contract getUintTemplate is ChainlinkClient, ConfirmedOwner {
 
   constructor() ConfirmedOwner(msg.sender){
     setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
-    oracle = 0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1;
-    externalJobId = "3474e8f52eee4c9282363d6d5b8c589c";
+    oracle = 0x52Ee9d274b3059575672389C372C03D97Ab71D2a;
+    externalJobId = "755776592d8a482e9e7e049d67539d36";
     oraclePayment = ((0 * LINK_DIVISIBILITY) / 10); // n * 10**18
   }
 

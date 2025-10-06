@@ -5,14 +5,14 @@ This smart contract is designed to retrieve a single Uint256 value from an oracl
 - Returns a single unsighed value from the oracle (i.e., a number that can only be zero or positive).
 
 ## Oracle Contract Address & Job ID:
-[View on Etherscan](https://sepolia.etherscan.io/address/0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1): 
+[View on Etherscan](https://sepolia.etherscan.io/address/0x52Ee9d274b3059575672389C372C03D97Ab71D2a): 
 ```
-0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1
+0x52Ee9d274b3059575672389C372C03D97Ab71D2a
 ```
 
 **Oracle Job ID**  
 ```
-3474e8f52eee4c9282363d6d5b8c589c
+755776592d8a482e9e7e049d67539d36
 ```
 
 **Oracle Fee**   

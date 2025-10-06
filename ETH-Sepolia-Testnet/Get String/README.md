@@ -5,14 +5,14 @@ This smart contract demonstrates how to retrieve a single string value from our 
 - Returns a single `string` value from the oracle.
 
 ## Oracle Contract Address & Job ID:
-[View on Etherscan](https://sepolia.etherscan.io/address/0xD738C81c59C5d0C42Fd061c4005c02C202d3fEFD): 
+[View on Etherscan](https://sepolia.etherscan.io/address/0x52Ee9d274b3059575672389C372C03D97Ab71D2a): 
 ```
-0xD738C81c59C5d0C42Fd061c4005c02C202d3fEFD
+0x52Ee9d274b3059575672389C372C03D97Ab71D2a
 ```
 
 **Oracle Job ID**  
 ```
-d6c22267b8034675afa4d4613fa84bbd
+1dfc4535183f468cb84cab5b4f0004d0
 ```
 
 **Oracle Fee**   

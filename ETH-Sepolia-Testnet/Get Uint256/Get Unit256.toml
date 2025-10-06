@@ -7,11 +7,11 @@ evmChainID = "11155111"
 name = "ETH-SEPOLIA DIRECT REQUEST (Get > Uint256)"
 
 # Optional External Job ID: Automatically generated if unspecified
-# externalJobID = "3474e8f52eee4c9282363d6d5b8c589c"
+# externalJobID = "755776592d8a482e9e7e049d67539d36"
 
 forwardingAllowed = false
 maxTaskDuration = "0s"
-contractAddress = "0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1"
+contractAddress = "0x52Ee9d274b3059575672389C372C03D97Ab71D2a"
 minContractPaymentLinkJuels = "0"
 observationSource = """
     decode_log   [type="ethabidecodelog"
@@ -28,7 +28,7 @@ observationSource = """
                   abi="fulfillOracleRequest(bytes32 requestId, uint256 payment, address callbackAddress, bytes4 callbackFunctionId, uint256 expiration, bytes32 data)"
                   data="{\\"requestId\\": $(decode_log.requestId), \\"payment\\": $(decode_log.payment), \\"callbackAddress\\": $(decode_log.callbackAddr), \\"callbackFunctionId\\": $(decode_log.callbackFunctionId), \\"expiration\\": $(decode_log.cancelExpiration), \\"data\\": $(encode_data)}"
                  ]
-    submit_tx    [type="ethtx" to="0x58ed771243D9E5EE9A765f00F0bA0B8044d682f1" data="$(encode_tx)"]
+    submit_tx    [type="ethtx" to="0x52Ee9d274b3059575672389C372C03D97Ab71D2a" data="$(encode_tx)"]
 
     decode_log -> decode_cbor -> fetch -> parse -> multiply -> encode_data -> encode_tx -> submit_tx
 """
