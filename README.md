@@ -3,6 +3,23 @@
 
 > Our mission at [Rational-Link](https://www.rational-link.com) is to provide **enterprise-grade oracle services** built around reliability, uptime, and security. These examples are intended to give developers the clear, practical guidance needed to integrate their Web3 applications with our Oracle services—use them as a starting point and adapt them for your production environment.
 
+## Project Structure
+
+```
+.
+├── ETH-Sepolia-Testnet
+│   ├── Get String
+│   │   ├── Get String.sol
+│   │   ├── Get String.toml
+│   │   └── README.md
+│   └── Get Uint256
+│       ├── Get Uint256.sol
+│       ├── Get Uint256.toml
+│       └── README.md
+├── LICENSE
+└── README.md
+```
+
 ---
 
 ## Overview
