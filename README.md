@@ -7,7 +7,7 @@
 
 ```
 .
-├── ETH-Sepolia-Testnet
+├── Ethereum-Sepolia-Testnet
 │   ├── Get String
 │   │   ├── Get String.sol
 │   │   ├── Get String.toml
