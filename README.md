@@ -1,7 +1,7 @@
 # Chainlink Oracle Public Job Specifications
 > Welcome to this educational repository. Inside you’ll find example smart contracts and Oracle job specifications that show how to connect on-chain applications to trusted off-chain data sources.
 
-Our mission at [Rational-Link](https://www.rational-link.com) is to provide **enterprise-grade oracle services** built around reliability, uptime, and security. These examples are intended to give developers the clear, practical guidance needed to integrate their Web3 applications with our Oracle services—use them as a starting point and adapt them for your production environment.
+> Our mission at [Rational-Link](https://www.rational-link.com) is to provide **enterprise-grade oracle services** built around reliability, uptime, and security. These examples are intended to give developers the clear, practical guidance needed to integrate their Web3 applications with our Oracle services—use them as a starting point and adapt them for your production environment.
 
 ---
 
