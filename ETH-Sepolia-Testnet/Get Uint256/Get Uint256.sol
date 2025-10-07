@@ -12,39 +12,37 @@
  * It is intended solely as an educational reference.
  */
 
-pragma solidity ^0.8.7;
+pragma solidity 0.8.19;
 
-import {Chainlink, ChainlinkClient} from "@chainlink/contracts@1.4.0/src/v0.8/operatorforwarder/ChainlinkClient.sol";
-import {ConfirmedOwner} from "@chainlink/contracts@1.4.0/src/v0.8/shared/access/ConfirmedOwner.sol";
-import {LinkTokenInterface} from "@chainlink/contracts@1.4.0/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
+import {Chainlink, ChainlinkClient} from "@chainlink/contracts/src/v0.8/operatorforwarder/ChainlinkClient.sol";
+import {ConfirmedOwner} from "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.sol";
+import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
 
 contract getUintTemplate is ChainlinkClient, ConfirmedOwner {
   using Chainlink for Chainlink.Request;
 
   uint256 public Uint;
-  
   bytes32 private externalJobId;
-  uint256 private oraclePayment;
-  address private oracle;
+  uint256 private constant oraclePayment = (0 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
   
   event RequestUintFulfilled(bytes32 indexed requestId,uint256 indexed Uint);
 
   constructor() ConfirmedOwner(msg.sender){
-    setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB);
-    oracle = 0x52Ee9d274b3059575672389C372C03D97Ab71D2a;
+    _setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
+    _setChainlinkOracle(0x52Ee9d274b3059575672389C372C03D97Ab71D2a);
     externalJobId = "755776592d8a482e9e7e049d67539d36";
-    oraclePayment = ((0 * LINK_DIVISIBILITY) / 10); // n * 10**18
+
   }
 
   function requestUint()
     public
     onlyOwner
   {
-    Chainlink.Request memory req = buildChainlinkRequest(externalJobId, address(this), this.fulfillUint.selector);
-    req.add("get", "https://your_API_endpoint_url");
-    req.add("path", "data,results");
-    req.addInt("times", 100);
-    sendChainlinkRequestTo(oracle, req, oraclePayment);
+    Chainlink.Request memory req = _buildChainlinkRequest(externalJobId, address(this), this.fulfillUint.selector);
+    req._add("get", "https://your_API_endpoint_url");
+    req._add("path", "data,results");
+    req._addInt("times", 100);
+    _sendOperatorRequest(req, oraclePayment);
   }
 
   function fulfillUint(bytes32 _requestId, uint256 _Uint)
