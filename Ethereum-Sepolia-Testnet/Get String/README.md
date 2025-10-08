@@ -43,7 +43,7 @@ Replace this with the API endpoint you want the contract to query.
   If the JSON response contains arrays, include the index in the path.
   For example:
     ```solidity
-    req.add("path", ""0,data,results");
+    req.add("path", "0,data,results");
     ```
 
 
