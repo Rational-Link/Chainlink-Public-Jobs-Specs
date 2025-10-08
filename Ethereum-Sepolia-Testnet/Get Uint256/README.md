@@ -39,7 +39,7 @@ Before compiling and deploying the smart contract in Remix, make sure to update 
   If the JSON response contains arrays, include the index in the path.
   For example:
     ```solidity
-    req.add("path", ""0,data,results");
+    req.add("path", "0,data,results");
     ```
 
 - **Line 44**
