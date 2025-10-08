@@ -34,7 +34,7 @@ Replace this with the API endpoint you want the contract to query.
 
 - **Line 40**  
   ```solidity
-  req.add("path", ""data,results");
+  req.add("path", "data,results");
   ``` 
   Provide the comma‑separated JSON path that points to the value you want returned to the smart contract.
   Example: "data,results" retrieves the results field inside the data object
