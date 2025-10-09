@@ -22,12 +22,12 @@ contract getStringTemplate is ChainlinkClient {
   using Chainlink for Chainlink.Request;
 
   string public stringVariable;
-  uint256 private constant oraclePayment = (1 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
+  uint256 private constant oraclePayment = (0 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
   bytes32 private externalJobId;
 
   constructor(
   ) {
-    _setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
+    _setChainlinkToken(0xb1D4538B4571d411F07960EF2838Ce337FE1E80E);
     _setChainlinkOracle(0xa0d71f8248b622f2ce3f9e88B6F901D6851440b7);
     externalJobId = "0372e30c5159437b9add555678f68630";  }
 

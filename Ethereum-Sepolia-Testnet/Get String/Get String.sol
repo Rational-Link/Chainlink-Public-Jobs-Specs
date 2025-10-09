@@ -22,7 +22,7 @@ contract getStringTemplate is ChainlinkClient {
   using Chainlink for Chainlink.Request;
 
   string public stringVariable;
-  uint256 private constant oraclePayment = (1 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
+  uint256 private constant oraclePayment = (0 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
   bytes32 private externalJobId;
 
   constructor(

@@ -28,8 +28,8 @@ contract getUintTemplate is ChainlinkClient, ConfirmedOwner {
   event RequestUintFulfilled(bytes32 indexed requestId,uint256 indexed Uint);
 
   constructor() ConfirmedOwner(msg.sender){
-    _setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
-    _setChainlinkOracle(0x52Ee9d274b3059575672389C372C03D97Ab71D2a);
+    _setChainlinkToken(0xb1D4538B4571d411F07960EF2838Ce337FE1E80E);
+    _setChainlinkOracle(0xa0d71f8248b622f2ce3f9e88B6F901D6851440b7);
     externalJobId = "b76683db6c0144c5bbaecbeb47a22934";
 
   }
