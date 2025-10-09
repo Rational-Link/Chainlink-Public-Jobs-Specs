@@ -27,24 +27,24 @@ Before compiling and deploying the smart contract in Remix, make sure to update 
 
 - **Line 42**  
   ```solidity
-  req.add("get", ""https://your_API_endpoint_url");
+  req._add("get", ""https://your_API_endpoint_url");
   ```
 
 - **Line 43**
   ```solidity
-  req.add("path", "data,results");
+  req._add("path", "data,results");
   ```
   Provide the comma-separated JSON path that points to the numeric value you want returned to the smart contract.
 
   If the JSON response contains arrays, include the index in the path.
   For example:
     ```solidity
-    req.add("path", "0,data,results");
+    req._add("path", "0,data,results");
     ```
 
 - **Line 44**
   ```solidity
-  req.addInt("times", 100); 
+  req._addInt("times", 100); 
   ```
   - multiplication factor must be used to multiply all the decimal places present within the API JSON response:
 
