@@ -7,7 +7,7 @@ evmChainID = "421614"
 name = "ARB-SEPOLIA DIRECT REQUEST (Get > Uint256)"
 
 # Optional External Job ID: Automatically generated if unspecified
-# externalJobID = ""
+# externalJobID = "b76683db6c0144c5bbaecbeb47a22934"
 
 forwardingAllowed = false
 maxTaskDuration = "0s"
