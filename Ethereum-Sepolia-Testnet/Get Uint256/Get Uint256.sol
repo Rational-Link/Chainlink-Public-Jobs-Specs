@@ -25,8 +25,6 @@ contract getUintTemplate is ChainlinkClient, ConfirmedOwner {
   bytes32 private externalJobId;
   uint256 private constant oraclePayment = (0 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
   
-  event RequestUintFulfilled(bytes32 indexed requestId,uint256 indexed Uint);
-
   constructor() ConfirmedOwner(msg.sender){
     _setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
     _setChainlinkOracle(0x52Ee9d274b3059575672389C372C03D97Ab71D2a);
@@ -45,11 +43,13 @@ contract getUintTemplate is ChainlinkClient, ConfirmedOwner {
     _sendOperatorRequest(req, oraclePayment);
   }
 
-  function fulfillUint(bytes32 _requestId, uint256 _Uint)
+  event RequestUintFulfilled(bytes32 indexed requestId,uint256 indexed Uint);
+
+  function fulfillUint(bytes32 requestId, uint256 _Uint)
     public
-    recordChainlinkFulfillment(_requestId)
+    recordChainlinkFulfillment(requestId)
   {
-    emit RequestUintFulfilled(_requestId, _Uint);
+    emit RequestUintFulfilled(requestId, _Uint);
     Uint = _Uint;
   }
 

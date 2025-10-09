@@ -25,12 +25,12 @@ minContractPaymentLinkJuels = 000000000000000000
 
 Before compiling and deploying the smart contract in Remix, make sure to update the following parameters:
 
-- **Line 42**  
+- **Line 40**  
   ```solidity
   req._add("get", ""https://your_API_endpoint_url");
   ```
 
-- **Line 43**
+- **Line 41**
   ```solidity
   req._add("path", "data,results");
   ```
@@ -42,7 +42,7 @@ Before compiling and deploying the smart contract in Remix, make sure to update 
     req._add("path", "0,data,results");
     ```
 
-- **Line 44**
+- **Line 42**
   ```solidity
   req._addInt("times", 100); 
   ```
