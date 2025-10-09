@@ -21,7 +21,7 @@ import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interface
 contract getUintTemplate is ChainlinkClient, ConfirmedOwner {
   using Chainlink for Chainlink.Request;
 
-  uint256 public Uint;
+  uint256 public UintVariable;
   bytes32 private externalJobId;
   uint256 private constant oraclePayment = (0 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
   
@@ -43,14 +43,14 @@ contract getUintTemplate is ChainlinkClient, ConfirmedOwner {
     _sendOperatorRequest(req, oraclePayment);
   }
 
-  event RequestUintFulfilled(bytes32 indexed requestId,uint256 indexed Uint);
+  event RequestUintFulfilled(bytes32 indexed requestId, uint256 indexed UintVariable);
   
-  function fulfillUint(bytes32 requestId, uint256 _Uint)
+  function fulfillUint(bytes32 _requestId, uint256 _UintVariable)
     public
-    recordChainlinkFulfillment(requestId)
+    recordChainlinkFulfillment(_requestId)
   {
-    emit RequestUintFulfilled(requestId, _Uint);
-    Uint = _Uint;
+    emit RequestUintFulfilled(_requestId, _UintVariable);
+    UintVariable = _UintVariable;
   }
 
 }

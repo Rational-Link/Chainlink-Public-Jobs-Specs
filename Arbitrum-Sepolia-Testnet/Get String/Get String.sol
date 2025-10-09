@@ -43,11 +43,11 @@ contract getStringTemplate is ChainlinkClient {
 
   event RequestFulfilled(bytes32 indexed requestId, string indexed stringVariable);
 
-  function fulfillString(bytes32 requestId, string calldata _stringVariable)
+  function fulfillString(bytes32 _requestId, string calldata _stringVariable)
     public
-    recordChainlinkFulfillment(requestId)
+    recordChainlinkFulfillment(_requestId)
   {
-    emit RequestFulfilled(requestId, _stringVariable);
+    emit RequestFulfilled(_requestId, _stringVariable);
     stringVariable = _stringVariable;
   }
 
