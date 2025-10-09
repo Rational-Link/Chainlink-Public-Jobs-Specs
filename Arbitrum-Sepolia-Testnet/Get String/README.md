@@ -51,7 +51,7 @@ Replace this with the API endpoint you want the contract to query.
 ## Step-by-Step Guide
 
 1. Open [Remix IDE](https://remix.ethereum.org/).  
-2. Log in to MetaMask and confirm you are connected to the **Ethereum Sepolia Test Network**.  
+2. Log in to MetaMask and confirm you are connected to the **Arbitrum Sepolia Test Network**.  
 3. Copy and paste the full contents of `Get String.sol` from this repository into Remix.  
 4. Update the input parameters to match your specific use case.  
 5. Compile and deploy the smart contract.  
