@@ -7,7 +7,7 @@
 
 ```
 .
-├── Ethereum-Sepolia-Testnet
+├── Ethereum-Sepolia-Testnet (i.e., Blockchain Network)
 │   ├── Get String
 │   │   ├── Get String.sol
 │   │   ├── Get String.toml
@@ -67,3 +67,4 @@
 - [Ethereum Remix IDE](https://remix.ethereum.org/)  
 
 ---
+
