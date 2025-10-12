@@ -39,7 +39,7 @@
 ---
 
 ## Oracle Details
-- **Supported Networks**: Ethereum, Polygon, Arbitrum (with more to come).  
+- **Supported Networks**: Ethereum, Polygon, Arbitrum.  
 - **Oracle Contract IDs & Job IDs**: Provided in examples for testnet usage.  
 - **Fees**: Demonstrated with placeholder values for clarity.  
 
