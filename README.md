@@ -69,7 +69,7 @@
 ---
 
 ## Estimating Gas Usage for Transactions
-Certain types of blockchain operations may be subject to gas limits. To estimate the gas fee required to execute a transaction, you can use the following syntax (via the Alchemy API as an example).
+Certain types of jobs may be subject to gas limits. To estimate the gas fee required to execute a transaction, you can use the following syntax (via the Alchemy API as an example).
 This example simulates a transaction from a sender address (FROM) to a smart contract (CONTRACT) with a specific function call (DATA) and returns an estimated gas cost
 
 ### Setup
