@@ -17,7 +17,6 @@
 │       ├── Get Uint256.toml
 │       └── README.md
 ...
-│
 ├── LICENSE
 └── README.md
 ```
