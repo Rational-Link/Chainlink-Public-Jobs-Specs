@@ -17,6 +17,7 @@
 │       ├── Get Uint256.toml
 │       └── README.md
 ...
+│
 ├── LICENSE
 └── README.md
 ```
@@ -67,3 +68,34 @@
 
 ---
 
+## Estimating Gas Usage for Transactions
+Certain types of blockchain operations may be subject to gas limits. To estimate the gas fee required to execute a transaction, you can use the following syntax (via the Alchemy API as an example).
+This example simulates a transaction from a sender address (FROM) to a smart contract (CONTRACT) with a specific function call (DATA) and returns an estimated gas cost
+
+### Setup
+Replace the placeholders with your actual values:
+```Bash
+RPC_URL="https://arb-sepolia.g.alchemy.com/v2/YOUR_ACTUAL_API_KEY"
+
+CONTRACT="0x_Your_Contract_Address"
+FROM="0x_Your_Sender_Address"
+DATA="0x_Your_Encoded_Function_Call"
+```
+### Estimate Gas via eth_estimateGas
+```Bash
+curl -s \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jsonrpc":"2.0",
+    "method":"eth_estimateGas",
+    "params":[
+      {
+        "from": "'"$FROM"'",
+        "to": "'"$CONTRACT"'",
+        "data": "'"$DATA"'"
+      }
+    ],
+    "id":1
+  }' \
+  $RPC_URL
+```
