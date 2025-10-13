@@ -21,13 +21,22 @@
 ├── LICENSE
 └── README.md
 ```
-
 ---
 
 ## Overview
 - Example Solidity contracts for requesting and consuming external data.
 - Sample TOML job descriptions to illustrate oracle job configuration.
 - References to oracle contract addresses and job IDs for supported test networks.
+
+---
+
+## Pricing 
+
+  All job executions on testnet environments (Ethereum Sepolia, Arbitrum Sepolia, Polygon Amoy) are provided free of charge to support development, integration testing, and pre-deployment validation.
+
+    │ Job	               │    Ethereum │  Arbitrum │ 	Polygon │ 
+    │ HTTP Get → Uint256 │   0 LINK	   │  0 LINK	 │  0 LINK  │ 
+    │ HTTP Get → String	 │   0 LINK	   │  0 LINK	 │  0 LINK  │ 
 
 ---
 
