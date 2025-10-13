@@ -78,7 +78,7 @@ JSON API Output:
 9. Wait for the oracle to return the requested data.  
 10. Once complete, click the **`AddressVariable`** button to view the returned value.  
 
-## Contact :email:
+## Contact 
 If you can't find an answer to your question, welcome to our [Discord!](https://discord.gg/JNzXmMZqks) or to reach out to chris@rational-link.com.
 
 
