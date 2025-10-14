@@ -4,10 +4,6 @@
 > Our mission at [Rational-Link](https://www.rational-link.com) is to provide **enterprise-grade oracle services** built around reliability, uptime, and security. These examples are intended to give developers the clear, practical guidance needed to integrate their Web3 applications with our Oracle services—use these scripts as a starting point and adapt them as needed for your production environment.
 
 ## Repository Structure
-- `*.sol` → Solidity examples.
-- `*.txt` → TOML job description samples.
-- `README.md` → Additional notes and references.
-
 ```
 .
 ├── Ethereum-Sepolia-Testnet (i.e., Blockchain Network)
@@ -24,6 +20,9 @@
 ├── LICENSE
 └── README.md
 ```
+- `*.sol` → Solidity examples.
+- `*.txt` → TOML job description samples.
+- `README.md` → Additional notes and references.
 ---
 
 ## Overview
