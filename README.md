@@ -3,7 +3,10 @@
 
 > Our mission at [Rational-Link](https://www.rational-link.com) is to provide **enterprise-grade oracle services** built around reliability, uptime, and security. These examples are intended to give developers the clear, practical guidance needed to integrate their Web3 applications with our Oracle services—use these scripts as a starting point and adapt them as needed for your production environment.
 
-## Project Structure
+## Repository Structure
+- `*.sol` → Solidity examples.
+- `*.txt` → TOML job description samples.
+- `README.md` → Additional notes and references.
 
 ```
 .
@@ -36,15 +39,10 @@
 
 ---
 
-## Repository Structure
-- `contracts/` → Solidity examples (educational only).
-- `jobs/` → TOML job description samples.
-- `docs/` → Additional notes and references.
 
----
 
 ## Oracle Details
-- **Supported Networks**: Ethereum, Polygon, Arbitrum.  
+- **Supported Networks**: Ethereum Sepolia, Polygon Amoy, Arbitrum Sepolia (Production to come).  
 - **Oracle Contract IDs & Job IDs**: Provided in examples for testnet usage.  
 - **Fees**: Demonstrated with placeholder values for clarity.  
 
