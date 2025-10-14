@@ -64,7 +64,7 @@
 ---
 
 ## Learn More
-- [Rational-Link Website](https://www.rational-link.com)  
+- [Rational Link Website](https://www.rational-link.com)  
 - [Chainlink Documentation](https://docs.chain.link/)  
 - [Ethereum Remix IDE](https://remix.ethereum.org/)  
 
