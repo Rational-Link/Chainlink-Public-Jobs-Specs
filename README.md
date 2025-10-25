@@ -7,11 +7,11 @@
 ```
 .
 ├── Ethereum-Sepolia-Testnet (i.e., Blockchain Network)
-│   ├── Get String
+│   ├── Get String/
 │   │   ├── Get String.sol
 │   │   ├── Get String.toml
 │   │   └── README.md
-│   └── Get Uint256
+│   └── Get Uint256/
 │       ├── Get Uint256.sol
 │       ├── Get Uint256.toml
 │       └── README.md
