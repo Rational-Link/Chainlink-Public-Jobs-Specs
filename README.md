@@ -6,7 +6,7 @@
 ## Repository Structure
 ```
 .
-├── Ethereum-Sepolia-Testnet (i.e., Blockchain Network)
+├── Ethereum-Sepolia-Testnet 
 │   ├── Get String/
 │   │   ├── Get String.sol
 │   │   ├── Get String.toml
