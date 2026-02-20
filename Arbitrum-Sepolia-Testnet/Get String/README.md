@@ -62,5 +62,5 @@ Replace this with the API endpoint you want the contract to query.
 10. Once complete, click the **`AddressVariable`** button to view the returned value.  
 
 ## Contact 
-If you can't find an answer to your question, welcome to our [Discord](https://discord.gg/JNzXmMZqks) or to reach out to chris@rational-link.com.
+If you can't find an answer to your question, welcome to reach out to chris@rational-link.com.
 
